@@ -2,6 +2,7 @@ node_modules
 .history
 .idea
 .env
+keys.json
 debot/keys.json
 debot/keys-prod.json
 debot/egree-debot.keys.json
