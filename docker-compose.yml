@@ -1,0 +1,40 @@
+version: "2"
+services:
+
+  app: 
+    container_name: ton-app
+    image: node:17
+    ports: 
+      - 3002:3000
+    command: bash -c 'npm start;tail -f /dev/null'
+    environment:
+      - PORT=3000  
+    volumes:
+      - .:/app
+
+  ton:
+    container_name: ton-node
+    image: tonlabs/local-node
+    ports: 
+      - 3080:80
+    environment:
+      - USER_AGREEMENT=yes 
+
+  # bg-sync:
+  #   image: cweagans/bg-sync
+  #   volumes:
+  #     - .:/source
+  #   volumes_from:
+  #     - app
+  #   environment:
+  #       #SYNC_SOURCE: .
+  #       SYNC_DESTINATION: /app
+  #       SYNC_MAX_INOTIFY_WATCHES: 400000
+  #       SYNC_VERBOSE: 1
+  #       SYNC_PREFER: newer
+  #       SYNC_EXTRA_UNISON_PROFILE_OPTS: |
+  #         ignore = Name .history
+  #         ignore = Name .git
+  #         ignore = Name .vscode
+  #         ignore = Name persist
+  #   privileged: true

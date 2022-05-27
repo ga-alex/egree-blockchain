@@ -1,0 +1,53 @@
+{
+	"ABI version": 2,
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"giver","type":"address"},
+				{"name":"hash","type":"bytes"},
+				{"name":"history","type":"bytes[]"},
+				{"name":"parent","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getVersion",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"bytes"}
+			]
+		},
+		{
+			"name": "getHistory",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"bytes[]"}
+			]
+		},
+		{
+			"name": "VERSION",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"VERSION","type":"bytes"}
+			]
+		},
+		{
+			"name": "GIVER",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"GIVER","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}

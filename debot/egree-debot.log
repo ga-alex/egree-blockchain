@@ -1,0 +1,17 @@
+Config: default
+Input arguments:
+     tvc: egree-debot.tvc
+      wc: None
+    keys: egree-debot.keys.json
+init_data: None
+is_update_tvc: None
+
+Seed phrase: "elephant effort cup deliver case pupil notable destroy way put girl length"
+Raw address: 0:accf5b45510dd8c8439757dd377447dd66b5c8307f795819eaf5d1d771dc6cb4
+testnet:
+Non-bounceable address (for init): 0QCsz1tFUQ3YyEOXV903dEfdZrXIMH95WBnq9dHXcdxstFP3
+Bounceable address (for later access): kQCsz1tFUQ3YyEOXV903dEfdZrXIMH95WBnq9dHXcdxstA4y
+mainnet:
+Non-bounceable address (for init): UQCsz1tFUQ3YyEOXV903dEfdZrXIMH95WBnq9dHXcdxstOh9
+Bounceable address (for later access): EQCsz1tFUQ3YyEOXV903dEfdZrXIMH95WBnq9dHXcdxstLW4
+Succeeded
